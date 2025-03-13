@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq7ojp8y2u8vb"
-path="res://.godot/imported/penquin.png-f0f597a58cf47b7c6926cd4a86bf7891.ctex"
+uid="uid://yastrjo5abvy"
+path="res://.godot/imported/death_pan.png-2cb1ecce7674d894e73852bb95518ef6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/penquin.png"
-dest_files=["res://.godot/imported/penquin.png-f0f597a58cf47b7c6926cd4a86bf7891.ctex"]
+source_file="res://textures/death_pan.png"
+dest_files=["res://.godot/imported/death_pan.png-2cb1ecce7674d894e73852bb95518ef6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bshssr1g63nen"
-path="res://.godot/imported/frozen_penquin.png-5715d2ae81c238ce63541b1adaa3f3fc.ctex"
+uid="uid://cd7cip4ye4m03"
+path="res://.godot/imported/pan.png-7f87d06c90caa6c7d558d86aa69f7ef2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/frozen_penquin.png"
-dest_files=["res://.godot/imported/frozen_penquin.png-5715d2ae81c238ce63541b1adaa3f3fc.ctex"]
+source_file="res://textures/pan.png"
+dest_files=["res://.godot/imported/pan.png-7f87d06c90caa6c7d558d86aa69f7ef2.ctex"]
 
 [params]
 

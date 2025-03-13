@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bvpowpomukhh"]
 
-[ext_resource type="Texture2D" uid="uid://dq7ojp8y2u8vb" path="res://textures/penquin.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cd7cip4ye4m03" path="res://textures/pan.png" id="1_4flbx"]
 
 [node name="Player" type="CharacterBody2D"]
 metadata/_edit_group_ = true
@@ -9,7 +9,3 @@ metadata/_edit_group_ = true
 texture = ExtResource("1_4flbx")
 offset = Vector2(0, -12)
 hframes = 2
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(0, -8)
-polygon = PackedVector2Array(0, 8, -8, 0, 0, -8, 8, -8)
