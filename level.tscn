@@ -8,10 +8,10 @@
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(40, 0)
-polygon = PackedVector2Array(-40, 128, -40, 184, 384, 184, 384, 128, 320, 80, 224, 80, 224, 128, 152, 128, 112, 112, 64, 112, 64, 128)
+polygon = PackedVector2Array(-40, 128, -40, 184, 704, 184, 704, 144, 640, 144, 608, 104, 552, 104, 528, 128, 384, 128, 320, 80, 256, 112, 224, 128, 152, 128, 112, 112, 64, 112, 64, 128)
 
 [node name="Player" parent="StaticBody2D/CollisionPolygon2D" instance=ExtResource("1_u52ul")]
-position = Vector2(-24, 128)
+position = Vector2(-24, 120)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(0, 8, 16, 16, 80, 48, 240, 24, 360, 32, 400, 0, 0, 0)
