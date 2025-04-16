@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://7vycwmeo4oq"]
+
+[ext_resource type="Texture2D" uid="uid://doajeu2til1xo" path="res://textures/finish.png" id="1_0ull6"]
+[ext_resource type="Script" uid="uid://crqrof7xqg7r5" path="res://Scripts/meta.gd" id="2_75i0q"]
+
+[node name="Meta" type="TextureRect"]
+z_index = -10
+offset_right = 128.0
+offset_bottom = 704.0
+texture = ExtResource("1_0ull6")
+stretch_mode = 1
+script = ExtResource("2_75i0q")

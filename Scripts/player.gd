@@ -1,4 +1,4 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 @export var up_gravity = 250
 @export var down_gravity = 300
@@ -9,12 +9,19 @@ extends CharacterBody2D
 @export var friccion = 210
 @export var air_friccion = 50
 @export var landing_aceleracion = 2200.0
+@export var fall_limit: float = 700.0
 
 var target_tilt = 0.0
+var finish_x = -1
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
 func _physics_process(delta: float) -> void:
-
+		
+	check_for_finish_line()
+	
+	if position.y > fall_limit:
+		print("Jugador cayó al vacío. Reiniciando nivel...")
+		get_tree().reload_current_scene.call_deferred()
 	
 	if is_on_floor():
 		target_tilt = 0.0
@@ -46,3 +53,8 @@ func _physics_process(delta: float) -> void:
 	
 	sprite_2d.rotation = lerp_angle(sprite_2d.rotation, deg_to_rad(target_tilt), 0.2)
 	sprite_2d.scale = sprite_2d.scale.lerp(Vector2.ONE, 0.05)
+
+func check_for_finish_line() -> void:
+	if global_position.x > finish_x and finish_x != -1:
+		set_deferred("process_mode", PROCESS_MODE_DISABLED)
+		process_mode = Node.PROCESS_MODE_DISABLED

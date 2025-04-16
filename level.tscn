@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://5xacuok1tmvo"]
+[gd_scene load_steps=6 format=3 uid="uid://5xacuok1tmvo"]
 
+[ext_resource type="Script" uid="uid://cs0s4vublcvom" path="res://Scripts/level.gd" id="1_0b4ue"]
 [ext_resource type="PackedScene" uid="uid://bvpowpomukhh" path="res://player.tscn" id="1_u52ul"]
 [ext_resource type="Script" uid="uid://nyycq3oau4p" path="res://Scripts/visible_collision_polygon_2d.gd" id="1_vonw3"]
+[ext_resource type="Script" uid="uid://bqxr0f7hdctiv" path="res://Scripts/dangerZone.gd" id="2_f2txt"]
+[ext_resource type="PackedScene" uid="uid://7vycwmeo4oq" path="res://meta.tscn" id="3_oi3di"]
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_0b4ue")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+script = ExtResource("2_f2txt")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(40, 0)
@@ -36,3 +41,10 @@ script = ExtResource("1_vonw3")
 
 [node name="Player" parent="StaticBody2D" instance=ExtResource("1_u52ul")]
 position = Vector2(16, 120)
+
+[node name="Meta" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_oi3di")]
+offset_left = 3888.0
+offset_top = -320.0
+offset_right = 4016.0
+offset_bottom = 384.0
+player = NodePath("../StaticBody2D/Player")
