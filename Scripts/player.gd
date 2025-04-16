@@ -16,7 +16,7 @@ var finish_x = -1
 @onready var sprite_2d: Sprite2D = $Sprite2D
 
 func _physics_process(delta: float) -> void:
-		
+	
 	check_for_finish_line()
 	
 	if position.y > fall_limit:
