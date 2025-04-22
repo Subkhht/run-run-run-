@@ -15,7 +15,7 @@ script = SubResource("GDScript_0b4ue")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(40, 0)
-polygon = PackedVector2Array(-40, 128, -40, 208, 672, 208, 704, 144, 640, 144, 608, 104, 552, 104, 528, 128, 384, 128, 320, 80, 256, 112, 224, 128, 152, 128, 112, 112, 64, 112, 64, 128)
+polygon = PackedVector2Array(-40, 128, -40, 208, 672, 208, 704, 144, 640, 144, 608, 104, 552, 104, 528, 128, 384, 128, 320, 80, 256, 112, 224, 128, 152, 128, 112, 112, 80, 120, 64, 128)
 script = ExtResource("1_vonw3")
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
@@ -29,7 +29,7 @@ polygon = PackedVector2Array(268.846, -181.462, 366.596, -148.254, 536.58, -106.
 script = ExtResource("1_vonw3")
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(2552, 312)
+position = Vector2(2416, -7.62939e-06)
 scale = Vector2(0.773775, 0.56468)
 polygon = PackedVector2Array(206.779, 0, 366.596, -148.254, 537.624, -226.677, 693.866, -194.4, 806.436, -283.346, 1095.93, -283.346, 1157.96, -354.183, 1313.04, -368.35, 1395.76, -425.019, 1519.82, -510.023, 1519.82, 0, 1302.7, 0, 797.634, -9.81628, 589.319, 0, 341.185, 0)
 script = ExtResource("1_vonw3")
@@ -44,8 +44,8 @@ script = ExtResource("1_vonw3")
 position = Vector2(16, 120)
 
 [node name="Meta" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_oi3di")]
-offset_left = 3888.0
-offset_top = -320.0
-offset_right = 4016.0
-offset_bottom = 384.0
+offset_left = 3704.0
+offset_top = -648.0
+offset_right = 3832.0
+offset_bottom = 712.0
 player = NodePath("../StaticBody2D/Player")

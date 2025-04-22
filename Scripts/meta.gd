@@ -1,8 +1,9 @@
 extends TextureRect
 
-@export var player: Player
+@export var player: Player  # Exporta la variable 'player' para asignarla desde el editor.
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	assert(player is Player)
-	player.finish_x = global_position.x
+	# Verifica que 'player' sea de tipo Player.
+	assert(player is Player)  
+	# Asigna la posición X de este nodo como la meta del jugador.
+	player.finish_x = global_position.x  
