@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://47n7jtb3si7l"]
+
+[ext_resource type="AudioStream" uid="uid://cyms6wu4qel76" path="res://audio/Lightness - Nomyn [ MÚSICA SIN COPYRIGHT ].mp3" id="1_wrn05"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_wrn05")
+volume_db = -19.078
+autoplay = true
