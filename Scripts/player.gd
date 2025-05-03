@@ -43,7 +43,7 @@ func _physics_process(delta: float) -> void:
 		else:
 			velocity.x = move_toward(velocity.x, max_speed, friccion * delta)
 
-		# Salto al presionar "ui_accept".
+		# Salto al presionar el espacio.
 		if Input.is_action_just_pressed("ui_accept"):
 			velocity.y = -jump_force
 	else:
@@ -51,7 +51,7 @@ func _physics_process(delta: float) -> void:
 		target_tilt = clamp(velocity.y / 4, -30, 30)  # Calcula la inclinación basada en la velocidad vertical.
 		velocity.x = move_toward(velocity.x, 0, air_friccion * delta)
 
-		# Reducción del salto al soltar "ui_accept".
+		# Reducción del salto al soltar el espacio.
 		if Input.is_action_just_released("ui_accept"):
 			velocity.y = unjump_force
 		if velocity.y > 0:
@@ -88,7 +88,6 @@ func check_for_finish_line() -> void:
 	if global_position.x > finish_x and finish_x != -1:
 		set_deferred("process_mode", PROCESS_MODE_DISABLED)  # Desactiva el procesamiento.
 		process_mode = Node.PROCESS_MODE_DISABLED
-		
 
 
 # Función para manejar la muerte del jugador

@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgh6utjgafdoy"]
+
+[ext_resource type="Script" uid="uid://b18vrwulngmlx" path="res://Scripts/menu_principal_opciones.gd" id="1_7uyvc"]
+[ext_resource type="Texture2D" uid="uid://bwimh6n0bvoqj" path="res://textures/pansintacc.png" id="2_tpicg"]
+[ext_resource type="PackedScene" uid="uid://cd5d7oxpclbl0" path="res://musica_menu.tscn" id="3_gidno"]
+
+[node name="MenuPrincipalOpciones" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7uyvc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -416.0
+offset_top = -152.0
+offset_right = 327.0
+offset_bottom = 344.0
+texture = ExtResource("2_tpicg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.487
+anchor_top = 0.5
+anchor_right = 0.487
+anchor_bottom = 0.5
+offset_left = -51.84
+offset_top = -50.0
+offset_right = 52.16
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="volumen" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "VOLUMEN"
+
+[node name="resolucion" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "RESOLUCIÓN"
+
+[node name="atras" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "ATRÁS"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_gidno")]
+
+[connection signal="pressed" from="VBoxContainer/volumen" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/resolucion" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/atras" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="VBoxContainer/atras" to="." method="_on_atras_pressed"]

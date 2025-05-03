@@ -13,5 +13,4 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	# Si el jugador ha alcanzado o superado la meta, detén el audio.
 	if player.global_position.x >= player.finish_x:
-		audio_stream_player.stop()  # Detiene la reproducción del audio.
-		set_process(false)  # Desactiva el método _process para optimizar rendimiento.
+		get_tree().change_scene_to_file("res://menu_seleccion.tscn") # Vuelve al menu de selecionar nivel

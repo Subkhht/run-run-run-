@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd5d7oxpclbl0"]
+
+[ext_resource type="AudioStream" uid="uid://dcfomi3u5hpy0" path="res://audio/AdhesiveWombat - Night Shade  NO COPYRIGHT 8-bit Music.mp3" id="1_n4kdh"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_n4kdh")
+volume_db = -22.486
+autoplay = true

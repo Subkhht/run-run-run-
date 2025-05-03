@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhbw4r6s6letg"]
+
+[ext_resource type="AudioStream" uid="uid://214ldma3esqb" path="res://audio/Density & Time - MAZE  NO COPYRIGHT 8-bit Music.mp3" id="1_1f5i8"]
+[ext_resource type="Script" uid="uid://c7gy1fcyoj0gj" path="res://Scripts/menu_seleccion.gd" id="1_gctyl"]
+
+[node name="SelecionNiveles" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gctyl")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(256, 160)
+layout_mode = 2
+follow_focus = true
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="atras" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "ATRÁS"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_1f5i8")
+volume_db = -22.486
+autoplay = true
+
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/atras" to="." method="_on_atras_pressed"]
