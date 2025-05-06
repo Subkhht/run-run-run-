@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmiwb8lacu4wk"]
+
+[ext_resource type="AudioStream" uid="uid://wt0xfcstap1r" path="res://audio/nchampions.mp3" id="1_jvnep"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_jvnep")
+volume_db = -19.676
