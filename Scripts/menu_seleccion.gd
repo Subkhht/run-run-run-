@@ -14,7 +14,7 @@ func _ready() -> void:
 func fill_levels() -> void:
 	var level_paths = DirAccess.get_files_at(level_folder_path)  # Obtiene los archivos de la carpeta de niveles.
 	for level_path in level_paths:  # Itera sobre cada archivo.
-		var button = Button.new()  # Crea un botón dinámicamente.
+		var button = Button.new() 
 		button.text = level_path.replace(".tscn", "").to_upper().replace("_", " ")  # Formatea el nombre del nivel.
 		v_box_container.add_child(button)  # Añade el botón al contenedor.
 		

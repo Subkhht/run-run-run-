@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://deyuc3m1y56tc"]
+
+[ext_resource type="Script" uid="uid://b7segwhhhc1ax" path="res://Scripts/volumen.gd" id="1_jabgj"]
+[ext_resource type="PackedScene" uid="uid://cmiwb8lacu4wk" path="res://musica_level_5.tscn" id="2_tudb4"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jabgj")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 16.0
+offset_right = 192.0
+offset_bottom = 47.0
+text = "ATRÁS"
+
+[node name="VolumeDownButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 128.0
+offset_top = -18.0
+offset_right = 142.0
+offset_bottom = 13.0
+grow_vertical = 2
+text = "-"
+
+[node name="VolumeUpButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -18.0
+offset_right = -142.0
+offset_bottom = 13.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "+"
+
+[node name="VolumeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 112.0
+offset_right = 215.0
+offset_bottom = 135.0
+text = "Volumen: 100%"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("2_tudb4")]
+
+[connection signal="pressed" from="Button" to="." method="_on_atras_pressed"]

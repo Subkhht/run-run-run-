@@ -44,12 +44,17 @@ text = "VOLUMEN"
 layout_mode = 2
 text = "RESOLUCIÓN"
 
+[node name="mensaje_flotante" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "En mantenimiento"
+
 [node name="atras" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "ATRÁS"
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("3_gidno")]
 
+[connection signal="pressed" from="VBoxContainer/volumen" to="." method="_on_volumen_pressed"]
 [connection signal="pressed" from="VBoxContainer/volumen" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/resolucion" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/atras" to="." method="_on_salir_pressed"]

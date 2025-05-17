@@ -1,0 +1,103 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7lx2v6m4qgx"]
+
+[ext_resource type="Script" uid="uid://nyycq3oau4p" path="res://Scripts/visible_collision_polygon_2d.gd" id="1_w270s"]
+[ext_resource type="PackedScene" uid="uid://bvpowpomukhh" path="res://player.tscn" id="2_6lxyo"]
+[ext_resource type="PackedScene" uid="uid://47n7jtb3si7l" path="res://musica_niveles.tscn" id="3_8gqb6"]
+[ext_resource type="PackedScene" uid="uid://7vycwmeo4oq" path="res://meta.tscn" id="4_6lxyo"]
+
+[node name="level_4" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="VisibleCollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(24, 96, 136, 96, 136, 136, 24, 136)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(200, 96, 288, 96, 376, 72, 456, 64, 536, 72, 624, 96, 688, 104, 688, 144, 680, 168, 232, 168, 200, 136)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(712, 16, 712, -48, 752, -104, 880, -120, 1080, -112, 1144, 0, 1128, 32, 760, 40, 720, 56)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(720, 96, 800, 112, 952, 128, 1064, 128, 1136, 120, 1152, 160, 1072, 184, 768, 184)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1208, 112, 1336, 160, 1632, 240, 1712, 240, 1712, 280, 1288, 288, 1200, 288)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(1784, 240, 1944, 176, 2056, 96, 2112, 48, 2208, -8, 2352, -8, 2432, -8, 2512, 0, 2560, 48, 2576, 96, 2528, 136, 2360, 112, 2272, 192, 2176, 376, 1752, 384)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D7" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-24, 8)
+polygon = PackedVector2Array(2744, 56, 2952, -16, 3072, -8, 3288, 0, 3464, 56, 3528, 120, 3440, 192, 3240, 192, 3032, 176, 2848, 176, 2704, 152)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D8" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(3712, 112, 4048, 56, 4160, 8, 4256, -48, 4384, -96, 4488, -144, 4696, -176, 4872, -184, 5152, -160, 5072, 56, 5416, -80, 5560, -120, 5768, -64, 5520, 240, 5792, 168, 5952, 112, 6128, 40, 6328, -8, 6168, 312, 6312, 312, 6768, 152, 6960, 232, 6320, 720, 6144, 864, 5392, 872, 4168, 560, 3768, 480)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D9" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(7168, 240, 7312, 208, 7480, 176, 7728, 208, 7936, 312, 7872, 440, 7328, 416, 7168, 408)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D10" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-104, -72)
+polygon = PackedVector2Array(8136, 600, 8880, 240, 8792, 960)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D11" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(16, 0)
+polygon = PackedVector2Array(8864, 160, 8864, 320, 9280, 320, 9280, 144, 8864, 144)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D12" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(9400, 152, 9520, 104, 9624, 40, 9768, -40, 9912, -48, 10016, -56, 10208, -64, 10280, -120, 10280, -40, 10248, 112, 10032, 136, 9752, 136, 9576, 232, 9424, 272)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D13" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-40, 80)
+polygon = PackedVector2Array(10432, -208, 10472, -256, 10680, -248, 10944, -216, 11112, -200, 11160, -136, 11064, -96, 10832, -104, 10560, -120, 10456, -160)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D14" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-904, -120)
+scale = Vector2(1.07528, 1.30078)
+polygon = PackedVector2Array(11256, -72, 11256, -136, 11288, -208, 11392, -232, 11632, -248, 11784, -240, 11872, -184, 11926.1, 0, 11866.6, -79.9519, 11859.2, 12.3003, 11814.6, -110.703, 11777.4, -43.051, 11777.4, -92.2522, 11732.7, -129.153, 11658.3, 123.003, 11554.2, -129.153, 11487.2, 110.703, 11427.7, -73.8018, 11390.5, -49.2012, 11345.8, -129.153, 11316.1, -43.051, 11301.2, -129.153)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="VisibleCollisionPolygon2D15" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-48, -32)
+polygon = PackedVector2Array(11192, 8, 11240, -16, 11272, -16, 11296, -8, 11328, 48, 11376, 96, 11456, 112, 11560, 128, 11696, 128, 11752, 128, 11792, 112, 11840, 88, 11880, 64, 11928, 40, 11976, 56, 12008, 112, 11976, 176, 11912, 216, 11792, 232, 11640, 224, 11464, 224, 11360, 216, 11272, 184, 11208, 112)
+script = ExtResource("1_w270s")
+metadata/_custom_type_script = "uid://nyycq3oau4p"
+
+[node name="Player" parent="." instance=ExtResource("2_6lxyo")]
+position = Vector2(40, 88)
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_8gqb6")]
+
+[node name="Meta" parent="." instance=ExtResource("4_6lxyo")]
+offset_left = 12032.0
+offset_top = -872.0
+offset_right = 12160.0
+offset_bottom = 608.0

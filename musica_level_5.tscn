@@ -5,3 +5,4 @@
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_jvnep")
 volume_db = -19.676
+autoplay = true
