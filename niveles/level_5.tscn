@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://ci7k61h53frwj"]
+[gd_scene load_steps=6 format=3 uid="uid://ci7k61h53frwj"]
 
+[ext_resource type="Script" uid="uid://cs0s4vublcvom" path="res://Scripts/level.gd" id="1_dhu0f"]
 [ext_resource type="Script" uid="uid://nyycq3oau4p" path="res://Scripts/visible_collision_polygon_2d.gd" id="1_e3uvt"]
 [ext_resource type="PackedScene" uid="uid://bvpowpomukhh" path="res://player.tscn" id="2_xrsp4"]
 [ext_resource type="PackedScene" uid="uid://cmiwb8lacu4wk" path="res://musica_level_5.tscn" id="3_dhu0f"]
 [ext_resource type="PackedScene" uid="uid://7vycwmeo4oq" path="res://meta.tscn" id="4_xrsp4"]
 
 [node name="level_5" type="Node2D"]
+script = ExtResource("1_dhu0f")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
