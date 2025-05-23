@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwux5vgosjxr4"]
+
+[ext_resource type="Script" uid="uid://ddl5a4h3i73b2" path="res://temporal.gd" id="1_dk7n8"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_dk7n8")

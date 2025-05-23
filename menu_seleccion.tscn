@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhbw4r6s6letg"]
+[gd_scene load_steps=4 format=3 uid="uid://dhbw4r6s6letg"]
 
 [ext_resource type="AudioStream" uid="uid://214ldma3esqb" path="res://audio/Density & Time - MAZE  NO COPYRIGHT 8-bit Music.mp3" id="1_1f5i8"]
 [ext_resource type="Script" uid="uid://c7gy1fcyoj0gj" path="res://Scripts/menu_seleccion.gd" id="1_gctyl"]
+[ext_resource type="PackedScene" uid="uid://bwux5vgosjxr4" path="res://temporal.tscn" id="3_1w0ud"]
 
 [node name="SelecionNiveles" type="CenterContainer"]
 anchors_preset = 15
@@ -36,5 +37,7 @@ text = "ATRÁS"
 stream = ExtResource("1_1f5i8")
 volume_db = -22.486
 autoplay = true
+
+[node name="Node" parent="." instance=ExtResource("3_1w0ud")]
 
 [connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/atras" to="." method="_on_atras_pressed"]

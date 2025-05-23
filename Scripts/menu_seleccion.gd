@@ -15,11 +15,11 @@ func fill_levels() -> void:
 	var level_paths = DirAccess.get_files_at(level_folder_path)  # Obtiene los archivos de la carpeta de niveles.
 	for level_path in level_paths:  # Itera sobre cada archivo.
 		var button = Button.new() 
-		button.text = level_path.replace(".tscn", "").to_upper().replace("_", " ")  # Formatea el nombre del nivel.
+		button.text = level_path.replace(".tscn.remap", "").to_upper().replace("_", " ")  # Formatea el nombre del nivel.
 		v_box_container.add_child(button)  # Añade el botón al contenedor.
 		
 		# Conecta el botón para cargar el nivel correspondiente cuando se presiona.
-		button.pressed.connect(func(): get_tree().change_scene_to_file(level_folder_path + level_path))
+		button.pressed.connect(func(): get_tree().change_scene_to_file("res://niveles/" + level_path.replace(".remap", "")))
 
 # Cambia a la escena del menú principal cuando se presiona el botón "Atrás".
 func _on_atras_pressed() -> void:
